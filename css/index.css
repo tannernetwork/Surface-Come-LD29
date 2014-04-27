@@ -1,0 +1,48 @@
+body {
+	background: black;
+	color: #777;
+	font: 18px "Trebuchet MS", Helvetica, sans-serif, Arial;
+	text-shadow: 1px 1px 1px black;
+	margin: 0;
+}
+
+canvas {
+	display: block;
+	cursor: pointer !important;
+}
+
+video {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+h3 {
+	margin: 0 0 5px;
+	color: red;
+}
+
+.block {
+	background: #090909;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #1af;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+}
+
+img {
+	float: right;
+	box-shadow: -1px -1px 0 0 #1af;
+}

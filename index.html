@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>Surface Come - LD29 Beneath the Surface</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Entry for Ludum Dare 29 Compo by Tanner" />
+	<meta property="og:image" content="media/ss2.png" />
+	<link rel="stylesheet" href="css/index.css" />
+	<!--game-->
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/boot.js"></script>
+	<script type="text/javascript" src="js/preload.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<div id="game-container"></div>
+	<div class="block">
+		<img src="assets/branding/tanner-150.png" alt="Tanner"/>
+		<h3>Surface Come</h3>
+		Entry for Ludum Dare 29 Compo<br/>
+		Developed by Tanner &copy; 2014<br/><br/>
+		<a href="https://twitter.com/TannerNetwork">twitter.com/tannernetwork</a><br/>
+		<a href="http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=26780">ludumdare.com/compo/ludum-dare-29/?action=preview&uid=26780</a>
+	</div>
+</div>
+<script type="text/javascript">
+(function () {
+	var game = new Phaser.Game(960, 600, Phaser.AUTO, 'game-container');
+	game.state.add('Boot', LDGame.Boot);
+	game.state.add('Preload', LDGame.Preload);
+	game.state.add('Menu', LDGame.Menu);
+	game.state.add('Game', LDGame.Game);
+	game.state.start('Boot');
+
+})();
+</script>
+</body>
+</html>
