@@ -18,7 +18,7 @@ LDGame.Menu.prototype = {
         this.loadSave();
 
         this.stage.visibilityChange = this.visibilityChange.bind(this);
-        this.soundx = this.add.sound('menu-music', 1, true);
+        this.soundx = this.add.sound('menu-music', 0.2, true);
         this.soundx.play();
 
         var bg = this.add.sprite(480, 270, 'background');
