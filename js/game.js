@@ -22,7 +22,7 @@ LDGame.Game.prototype = {
         this.stage.visibilityChange = this.visibilityChange.bind(this);
 
         var bg = this.add.sprite(480, 270, 'background');
-        this.soundx = this.add.sound('run-music', 1, true);
+        this.soundx = this.add.sound('run-music', 0.4, true);
         this.soundx.play();
         bg.anchor.setTo(0.5);
 
